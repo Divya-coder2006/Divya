@@ -146,11 +146,8 @@ function draw() {
   
  if (monkey.isTouching(obstaclesGroup)){
   monkey.velocityY = -12 ;
-   survival = survival-5
-      
-   obstaclesGroup[0].destroy();
-    
-    mpS.play();
+   gameState = END;
+    goS.play();
   }
 
  if (monkey.isTouching(bGroup)){
